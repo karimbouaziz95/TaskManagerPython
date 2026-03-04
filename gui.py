@@ -49,7 +49,7 @@ while True:
             sg.popup("Please select a to-do item and enter the new text before editing.", title="Input Error")
 
     # Handle list box selection event
-    elif event == "TODO_LIST":
+    elif event == "TODO_LIST" and values["TODO_LIST"]:
          window["TODO_INPUT"].update(value=values["TODO_LIST"][0])
     
     print("Event:", event)
