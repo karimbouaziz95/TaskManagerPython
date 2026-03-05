@@ -1,6 +1,2 @@
-book a flight
-play chess
 Cook dinner
-Brush teeth
-Program
 Training
