@@ -5,6 +5,9 @@ import time
 # Get the list of to-dos from the text file
 todos = functions.get_todos()
 
+# Set the theme for the GUI
+sg.theme("BluePurple")
+
 # Define the GUI layout
 clock = sg.Text("", key="CLOCK")
 label = sg.Text("Type in a to-do") 
