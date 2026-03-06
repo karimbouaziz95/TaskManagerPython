@@ -28,5 +28,3 @@ st.text_input(
     key="todo_input",
     on_change=add_todo
 )
-
-st.session_state
