@@ -1,6 +1,11 @@
 import functions
 import FreeSimpleGUI as sg
 import time
+import os
+
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", "w") as file:
+        pass
 
 # Get the list of to-dos from the text file
 todos = functions.get_todos()
@@ -29,7 +34,7 @@ layout = [
 # Create the window and start the event loop
 window = sg.Window("My To-Do App", layout=layout, font=("Helvetica", 20))
 while True:
-    event,values = window.read(timeout=10)
+    event,values = window.read(timeout=200)
 
     # Update the clock
     clock_time = time.strftime("%b %d, %Y %H:%M:%S")
